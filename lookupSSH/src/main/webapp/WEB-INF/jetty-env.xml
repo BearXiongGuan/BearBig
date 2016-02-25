@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">  
+    <New id="lookupDB" class="org.eclipse.jetty.plus.jndi.Resource">  
+        <Arg>java:/lookupDB</Arg>  
+        <Arg>  
+            <New class="com.mchange.v2.c3p0.ComboPooledDataSource">  
+                <Set name="driverClass">com.mysql.jdbc.Driver</Set>  
+                <Set name="jdbcUrl">jdbc:mysql://192.168.1.222:3306/ceshi</Set>  
+                <Set name="user">mysql</Set>  
+                <Set name="password">mysql</Set>  
+            </New>  
+        </Arg>  
+    </New>  
+</Configure>

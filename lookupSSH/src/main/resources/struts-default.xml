@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- <constant name="struts.devMode" value="true" /> -->
+	<!-- 把action扩展名改为.do -->
+	<constant name="struts.action.extension" value="do" />
+	<!-- 把主题设为simple -->
+	<constant name="struts.ui.theme" value="simple" />
+	<!-- 指定由spring负责action对象的创建 -->
+	<!-- <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" 
+		/> -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 是否开启动态方法调用 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+	<!-- 进行扫描的根包，该包会被扫描成action -->
+    <constant name="struts.convention.action.packages" value="com.cykj.ssh.controller" />
+</struts>
