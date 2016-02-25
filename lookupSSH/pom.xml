@@ -265,7 +265,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
-					<warName>winssage</warName>
+					<warName>lookupSSH</warName>
 				</configuration>
 			</plugin>
 			<!-- eclipse插件, 设定wtp版本 -->
